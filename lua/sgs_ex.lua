@@ -121,7 +121,7 @@ end
 
 function sgs.CreateAttackRangeSkill(spec)
 	assert(type(spec.name) == "string")
-	assert(type(spec.extra_func) == "function" or type(spec.fixed.func) == "function")
+	assert(type(spec.extra_func) == "function" or type(spec.fixed_func) == "function")
 
 	local skill = sgs.LuaAttackRangeSkill(spec.name)
 
